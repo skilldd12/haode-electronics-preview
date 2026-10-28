@@ -1,0 +1,43 @@
+{
+  "classification": "Original generic BGA package visualization; illustrative dimensions, no manufacturer or SKU claim",
+  "frames": 44,
+  "framePattern": "frame-%03d.webp",
+  "width": 1600,
+  "height": 1000,
+  "poster": "poster.webp",
+  "posterWidth": 1600,
+  "posterHeight": 1000,
+  "mobilePoster": "mobile-poster.webp",
+  "mobilePosterWidth": 960,
+  "mobilePosterHeight": 600,
+  "camera": {
+    "projection": "perspective",
+    "lensMM": 70,
+    "target": [
+      -1,
+      0,
+      3.8
+    ],
+    "start": [
+      26,
+      -42,
+      18
+    ],
+    "end": [
+      30.32,
+      -48.72,
+      20.272
+    ],
+    "distanceScale": [
+      1,
+      1.16
+    ],
+    "objectRotationDegrees": 0,
+    "shift": [
+      -0.27,
+      -0.12
+    ]
+  },
+  "lighting": "Physical rectangular cold strip position linearly moves from (-10,-1,25) to (-1,4,25); static fill and grazing solder card",
+  "sequenceBytes": 5720632
+}
