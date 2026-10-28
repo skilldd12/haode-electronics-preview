@@ -1,6 +1,8 @@
 {
-  "version": "20261028-accuracy-preview",
+  "version": "20261028-photo3",
   "pages": 152,
   "repository": "haode-electronics-preview",
-  "kind": "static-design-preview"
+  "kind": "static-design-preview",
+  "hero": "licensed-real-xilinx-zynq-photograph",
+  "editorialScenes": 8
 }
