@@ -1,8 +1,8 @@
 {
-  "version": "20261028-photo3",
+  "version": "20261028-hero4",
   "pages": 152,
   "repository": "haode-electronics-preview",
   "kind": "static-design-preview",
-  "hero": "licensed-real-xilinx-zynq-photograph",
+  "hero": "licensed-real-xilinx-zynq-optical-inspection",
   "editorialScenes": 8
 }
