@@ -1,0 +1,30 @@
+{
+  "reused_thirteen": {
+    "source": "Previous HAODE website clean assets, prepared by the prior visual review",
+    "local_source": "outputs/haode-visual-review-20261027/brand-reuse",
+    "preserved_originals": true
+  },
+  "yageo.png": {
+    "source": "https://yageogroup.com/yageo-group.png",
+    "kind": "Official current YAGEO Group PNG, downloaded unchanged"
+  },
+  "molex.svg": {
+    "source": "https://assets.molex.com/is/content/molex/Molex_Logo_Red-3",
+    "kind": "Official Molex SVG, downloaded unchanged"
+  },
+  "alpsalpine.svg": {
+    "source": "https://www.alpsalpine.com/assets/components/logo-company-DotFyIXQ.svg",
+    "discovered_from": "https://www.alpsalpine.com/assets/components/Image-BfjXM5n8.js",
+    "kind": "Official Alps Alpine SVG, downloaded unchanged"
+  },
+  "te-connectivity.svg": {
+    "source": "https://commons.wikimedia.org/wiki/File:TE_Connectivity_logo.svg",
+    "original_source": "http://www.te.com/_TEincludes/ver/1499/v2/images/te-connectivity-logo.svg",
+    "kind": "Commons archived manufacturer artwork; original official SVG endpoint returned 403. No paths redrawn."
+  },
+  "maxim-integrated.svg": {
+    "source": "https://commons.wikimedia.org/wiki/File:Maxim_Integrated_logo.svg",
+    "original_source": "https://www.maximintegrated.com/en.html",
+    "kind": "Commons archived manufacturer artwork, author Maxim Integrated. Legacy brand preserved. No paths redrawn."
+  }
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>When a BOM carries an end-of-life part: how to run the substitution check · HAODE</title>
+  <meta name="description" content="An end-of-life notice is the moment a BOM is most likely to get a careless drop-in. Four steps keep the risk ahead of the prototype.">
+  <meta name="theme-color" content="#F5F7F9">
+  <script>
+    /* Respect the saved theme before first paint. Light is the default. */
+    try { if (localStorage.getItem('haode-theme') === 'dark') { document.documentElement.setAttribute('data-theme', 'dark'); document.querySelector('meta[name=theme-color]').content = '#171B20'; } } catch (e) {}
+  </script>
+  
+  <meta name="robots" content="noindex, nofollow">
+  
+  <link rel="canonical" href="https://skilldd12.github.io/haode-electronics-preview/en/news/bom-substitution-eol/">
+  <link rel="alternate" hreflang="zh-CN" href="https://skilldd12.github.io/haode-electronics-preview/news/bom-substitution-eol">
+  <link rel="alternate" hreflang="en" href="https://skilldd12.github.io/haode-electronics-preview/en/news/bom-substitution-eol">
+  <link rel="alternate" hreflang="x-default" href="https://skilldd12.github.io/haode-electronics-preview/news/bom-substitution-eol">
+  
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="HAODE / Haode Electronics">
+  <meta property="og:title" content="When a BOM carries an end-of-life part: how to run the substitution check">
+  <meta property="og:description" content="An end-of-life notice is the moment a BOM is most likely to get a careless drop-in. Four steps keep the risk ahead of the prototype.">
+  <meta property="og:url" content="https://skilldd12.github.io/haode-electronics-preview/en/news/bom-substitution-eol">
+  <meta property="og:image" content="https://skilldd12.github.io/haode-electronics-preview/img/og-default.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/haode-electronics-preview/favicon.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/haode-electronics-preview/img/apple-touch-icon.png">
+  <link rel="preload" href="/haode-electronics-preview/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/haode-electronics-preview/fonts/ibm-plex-sans-500-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/haode-electronics-preview/css/fonts.css">
+  <link rel="stylesheet" href="/haode-electronics-preview/css/site.css">
+  <link rel="stylesheet" href="/haode-electronics-preview/css/hero.css">
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"When a BOM carries an end-of-life part: how to run the substitution check","datePublished":"2026-10-14","dateModified":"2026-10-28T07:08:27.684Z","author":{"@type":"Organization","name":"HAODE 技术资料组"},"publisher":{"@type":"Organization","name":"Haode Electronics"},"mainEntityOfPage":"https://skilldd12.github.io/haode-electronics-preview/en/news/bom-substitution-eol","inLanguage":"en"}</script>
+  
+<link rel="stylesheet" href="/haode-electronics-preview/preview.css"></head>
+<body class="">
+  <a class="skip-link" href="#main">Skip to content</a>
+  
+<header class="site-header" data-header>
+  <div class="wrap header-inner">
+    <a class="brand" href="/haode-electronics-preview/en/" aria-label="HAODE">
+      <img class="brand-mark mark-on-dark" src="/haode-electronics-preview/img/logo-mark-light.png" alt="" width="25" height="27" decoding="async">
+      <img class="brand-mark mark-on-light" src="/haode-electronics-preview/img/logo-mark.png" alt="" width="25" height="27" decoding="async">
+      <span class="brand-word">HAODE</span>
+      <span class="brand-sub">ELECTRONICS</span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Menu">
+      <ul class="nav-list">
+        
+        <li>
+          <a class="nav-link" href="/haode-electronics-preview/en/products/">Products &amp; brands</a>
+        </li>
+        
+        <li>
+          <a class="nav-link" href="/haode-electronics-preview/en/services/">Sourcing services</a>
+        </li>
+        
+        <li>
+          <a class="nav-link" href="/haode-electronics-preview/en/quality/">Quality &amp; delivery</a>
+        </li>
+        
+        <li>
+          <a class="nav-link" href="/haode-electronics-preview/en/about/">About HAODE</a>
+        </li>
+        
+        <li>
+          <a class="nav-link is-active" href="/haode-electronics-preview/en/news/" aria-current=&#34;page&#34;>Notes</a>
+        </li>
+        
+        <li>
+          <a class="nav-link" href="/haode-electronics-preview/en/contact/">Contact</a>
+        </li>
+        
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a class="lang-switch" href="/haode-electronics-preview/news/bom-substitution-eol/" hreflang="zh-CN" lang="zh-CN">中文</a>
+      <a class="btn btn-primary btn-sm header-quote" href="/haode-electronics-preview/en/quote/">Request a quote</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle>
+        <span class="menu-toggle-label">Menu</span>
+        <span class="menu-toggle-bars" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-nav" id="mobile-nav" hidden data-mobile-nav>
+    <ul class="mobile-nav-list">
+      
+      <li><a href="/haode-electronics-preview/en/products/">Products &amp; brands</a></li>
+      
+      <li><a href="/haode-electronics-preview/en/services/">Sourcing services</a></li>
+      
+      <li><a href="/haode-electronics-preview/en/quality/">Quality &amp; delivery</a></li>
+      
+      <li><a href="/haode-electronics-preview/en/about/">About HAODE</a></li>
+      
+      <li><a href="/haode-electronics-preview/en/news/" aria-current=&#34;page&#34;>Notes</a></li>
+      
+      <li><a href="/haode-electronics-preview/en/contact/">Contact</a></li>
+      
+      <li class="mobile-nav-quote"><a class="btn btn-primary" href="/haode-electronics-preview/en/quote/">Request a quote</a></li>
+      <li><a class="mobile-nav-lang" href="/haode-electronics-preview/news/bom-substitution-eol/">中文</a></li>
+    </ul>
+  </div>
+</header>
+
+  <main id="main">
+    
+<article>
+  <header class="article-head">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb">
+  <a href="/haode-electronics-preview/en/">Home</a>
+  
+  <span aria-hidden="true">/</span>
+  
+  <a href="/haode-electronics-preview/en/news/">Notes</a>
+  
+  
+  <span aria-hidden="true">/</span>
+  
+  <span>When a BOM carries an end-of-life part: how to run the substitution check</span>
+  
+  
+</nav>
+
+      <h1 class="h1">When a BOM carries an end-of-life part: how to run the substitution check</h1>
+      <div class="article-meta">
+        <span>Published 2026-10-14</span>
+        <span>Author HAODE 技术资料组</span>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="wrap page-body">
+    <div class="prose"><h2>Confirm the status, not the rumour</h2>
+<p>Manufacturer lifecycle states run from active through not-recommended-for-new-designs, last-time-buy and obsolete. Each one calls for a different action. When a supplier says a part is gone, the first step is the manufacturer product page, not a substitute search.</p>
+<h2>Write down what must stay identical</h2>
+<p>Substitution is about constraints, not names. The items usually fixed are package and pinout, supply range, temperature grade, the critical timing or bandwidth figure, and qualification level for automotive or medical builds. Everything else is negotiable.</p>
+<h2>Compare against the datasheet, not the headline</h2>
+<p>Headline figures are usually measured under the most favourable conditions. For an op-amp, check the load behind the noise and settling numbers. For a MOSFET, check the VGS that the RDS(on) figure assumes. For memory, check the speed grade behind the timing table. Identical packages with different die areas are routine.</p>
+<h2>Validate in small volume before committing</h2>
+<p>A substitute has to run on a real board. Even a perfect parameter match leaves wetting, thermal cycling and long-term supply to be answered by hardware. Keep the first batch to prototype coverage.</p>
+<h2>Keep a substitution record</h2>
+<p>Which part, why it changed, what was verified, who signed off. When the next end-of-life notice lands, that record is the fastest starting point.</p></div>
+
+    <div class="section" style="margin-top:var(--section-y)">
+      <p class="eyebrow">Related reading</p>
+      <div class="news-grid news-grid-text">
+        
+        <article class="news-card">
+          <a href="/haode-electronics-preview/en/news/suffix-and-package/">
+            <p class="news-date">2026-10-06</p>
+            <h2 class="news-title">Suffixes are not decoration: package, temperature and packing live there</h2>
+            <p class="news-excerpt">One base part number, several order codes. Quoting the full string saves a round of confirmation.</p>
+          </a>
+        </article>
+        
+        <article class="news-card">
+          <a href="/haode-electronics-preview/en/news/mlcc-lead-time-planning/">
+            <p class="news-date">2026-09-24</p>
+            <h2 class="news-title">Planning passive inventory when MLCC lead times move</h2>
+            <p class="news-excerpt">Passive shortages are rarely about total volume. They are about too many distinct specifications.</p>
+          </a>
+        </article>
+        
+        <article class="news-card">
+          <a href="/haode-electronics-preview/en/news/msl-and-esd-packing/">
+            <p class="news-date">2026-09-11</p>
+            <h2 class="news-title">Moisture-sensitive parts and ESD packing: what to check on arrival</h2>
+            <p class="news-excerpt">Moisture and static are two different problems with two different controls. Confusing them is the usual gap at goods-in.</p>
+          </a>
+        </article>
+        
+      </div>
+      <div class="section-foot">
+        <a class="link-arrow" href="/haode-electronics-preview/en/news/">Back to notes<span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+</article>
+
+  </main>
+  <footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img class="footer-mark mark-on-dark" src="/haode-electronics-preview/img/logo-mark-light.png" alt="" width="34" height="37" loading="lazy" decoding="async">
+          <img class="footer-mark mark-on-light" src="/haode-electronics-preview/img/logo-mark.png" alt="" width="34" height="37" loading="lazy" decoding="async">
+        <p class="footer-tagline">Part sourcing, brand supply and BOM kitting for electronics manufacturing.</p>
+      </div>
+      <nav class="footer-cols" aria-label="Company">
+        <div class="footer-col">
+          <h2 class="footer-heading">Catalogue</h2>
+          <ul>
+            <li><a href="/haode-electronics-preview/en/products/">Products &amp; brands</a></li>
+            <li><a href="/haode-electronics-preview/en/brands/">Brands</a></li>
+            <li><a href="/haode-electronics-preview/en/categories/">Categories</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-heading">Company</h2>
+          <ul>
+            <li><a href="/haode-electronics-preview/en/about/">About HAODE</a></li>
+            <li><a href="/haode-electronics-preview/en/quality/">Quality &amp; delivery</a></li>
+            <li><a href="/haode-electronics-preview/en/news/">Notes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-heading">Support</h2>
+          <ul>
+            <li><a href="/haode-electronics-preview/en/contact/">Contact</a></li>
+            <li><a href="/haode-electronics-preview/en/quote/">Request a quote</a></li>
+            <li><a href="/haode-electronics-preview/en/services/">Sourcing services</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-heading">Legal</h2>
+          <ul>
+            <li><a href="/haode-electronics-preview/en/privacy/">Privacy policy</a></li>
+            <li><a href="/haode-electronics-preview/en/terms/">Terms of use</a></li>
+            <li><a href="/haode-electronics-preview/sitemap.xml">Sitemap</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="footer-contact">
+      
+      <p class="footer-contact-line">
+        <span class="label">Email</span>
+        <a href="mailto:inquiry@devecomponents.com">inquiry@devecomponents.com</a>
+      </p>
+      
+      <p class="footer-contact-line"><span class="label">Telephone</span><a href="tel:+8615767857371">+8615767857371</a></p>
+      
+      
+      
+      <p class="footer-contact-line"><span class="label">Address</span><span>Room 29L, Block B, Duhui 100 Building, Futian District, Shenzhen, China</span></p>
+      
+      <p class="footer-legal-name">Shenzhen Haode Electronics Co., Ltd</p>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 HAODE / Haode Electronics. All rights reserved.</p>
+      <p class="footer-disclaimer">Part numbers and parameters on this site come from public documentation and are for selection reference only. Price, stock and timing are confirmed in the quotation reply.</p>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="true">
+        <span class="theme-toggle-dot" aria-hidden="true"></span>
+        <span data-theme-label>Dark theme</span>
+      </button>
+    </div>
+  </div>
+</footer>
+
+  <script type="module" src="/haode-electronics-preview/js/dist/site.js"></script>
+<p class="preview-build-note">HAODE · Design preview / No live transactions</p><script src="/haode-electronics-preview/preview.js" defer></script></body>
+</html>
